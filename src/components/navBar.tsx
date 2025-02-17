@@ -71,7 +71,7 @@ export default function DrawerAppBar() {
           </Box>
 
           <IconButton
-            color="primary"
+            color="secondary"
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
@@ -79,13 +79,27 @@ export default function DrawerAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Box sx={{ display: { xs: "none", sm: "none", md: "block" } }}>
+          <Box
+            sx={{
+              display: { xs: "none", sm: "none", md: "block" },
+            }}
+          >
             {navItems.map((item) => (
-              <Button key={item} size="large">
+              <Button
+                key={item}
+                size="large"
+                color="secondary"
+                sx={{ pt: 2.25, pb: 2.25 }}
+              >
                 {item}
               </Button>
             ))}
-            <Button variant="contained" color="primary" size="large">
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              sx={{ ml: 2 }}
+            >
               Bestiary Portal
             </Button>
           </Box>

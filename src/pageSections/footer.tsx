@@ -5,12 +5,12 @@ const Footer = () => {
     <Box
       sx={{
         width: "100%",
-        py: 3, // Vertical padding
-        backgroundColor: "secondary.main", // Use the paper color from the theme
+        py: 3,
+        backgroundColor: "secondary.main",
         borderTop: "1px solid",
         borderColor: "divider",
         textAlign: "center",
-        mt: 5, // Add margin at the top
+        mt: 5,
       }}
     >
       <Typography variant="body2" color="secondary.contrastText">

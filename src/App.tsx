@@ -1,5 +1,5 @@
 import "./App.css";
-import { Box } from "@mui/material"; // Example of using the Grid system
+import { Box } from "@mui/material";
 import NavBar from "./components/navBar";
 import Content from "./pageSections/content";
 import Footer from "./pageSections/footer";
