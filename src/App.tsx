@@ -1,18 +1,16 @@
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
-import { Box } from "@mui/material";
-import NavBar from "./components/navBar";
-import Content from "./pageSections/content";
-import Footer from "./pageSections/footer";
+import MainPage from "./pages/mainPage";
+import LoginPage from "./pages/loginPage";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
-        <Content />
-        <Footer></Footer>
-      </Box>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </Router>
   );
 }
 

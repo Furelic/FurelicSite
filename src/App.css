@@ -1,9 +1,21 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+body{   
+  margin:0;
+  padding:0;
 }
-.card {
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  border: 0;
+  padding: 0;
+  /* text-align: center; */
+}
+/*.card {
   padding: 2em;
 } */
+
+.login-page-root {
+  background: radial-gradient(ellipse at top left, #FC7E46, #E75743, #C21A3F);
+  height: 100vh; /* Ensure it covers the full viewport height */
+  width: 100vw; /* Ensure it covers the full viewport width */
+}

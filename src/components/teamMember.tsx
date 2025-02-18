@@ -10,7 +10,6 @@ export default function TeamMember(props: {
   return (
     <Box>
       <Card
-        variant="outlined"
         sx={{
           pt: 1.5,
           pl: 1.5,

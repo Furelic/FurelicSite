@@ -27,13 +27,13 @@ function InfoDump() {
       }}
     >
       <Typography variant="h3" sx={{ fontWeight: "bold" }}>
-        Pets and stuff!
+        Pet management, simplified!
       </Typography>
-      <Typography sx={{ mt: 1, mb: 2, fontSize: "1.1rem" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis
-        aliquam consectetur. Nulla in blandit mi. Vestibulum vitae ex felis.
-        Nullam suscipit mi sed nibh imperdiet, non dictum leo pellentesque.
-        Aliquam dignissim est eget metus tempor, vel.
+      <Typography sx={{ mt: 1, mb: 2 }}>
+        Tired of chasing pet records and missing fees? Furelic automates pet
+        management for multifamily housing, saving you time, reducing stress,
+        and maximizing revenue. Let us handle the paperwork while you focus on
+        what matters most.
       </Typography>
       <Box
         sx={{
@@ -64,7 +64,7 @@ function InfoDump() {
 
 export default function Intro() {
   return (
-    <Container id="intro" sx={{ scrollMarginTop: "64px" }}>
+    <Container id="about" sx={{ scrollMarginTop: "64px" }}>
       <Box
         sx={{
           display: "flex",

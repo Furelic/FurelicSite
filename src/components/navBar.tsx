@@ -13,7 +13,16 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import LogoIcon from "./logo";
 
-const navItems = ["About", "Pricing", "Contact"];
+interface navItem {
+  name: string;
+  link: string;
+}
+
+const navItems: navItem[] = [
+  { name: "About", link: "#about" },
+  { name: "Pricing", link: "#pricing" },
+  { name: "Contact", link: "#contact" },
+];
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -29,14 +38,20 @@ export default function DrawerAppBar() {
     >
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.name} disablePadding>
+            <ListItemButton sx={{ textAlign: "center" }} href={item.link}>
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Button variant="contained" color="primary" size="large" sx={{ mb: 2 }}>
+      <Button
+        variant="contained"
+        color="primary"
+        size="large"
+        sx={{ mb: 2 }}
+        href="/login"
+      >
         Bestiary Portal
       </Button>
     </Box>
@@ -50,7 +65,6 @@ export default function DrawerAppBar() {
       <AppBar
         component="nav"
         sx={{
-          //   bgcolor: "#ffffffc4",
           background: "linear-gradient(to top, #ffffffba, #fffffffa)",
           boxShadow: "0 1em 4em 1em #0001",
           backdropFilter: "blur(0.25em)",
@@ -67,7 +81,7 @@ export default function DrawerAppBar() {
               maxWidth: "lg",
             }}
           >
-            <LogoIcon fill="#E75743" />
+            <LogoIcon />
           </Box>
 
           <IconButton
@@ -86,18 +100,20 @@ export default function DrawerAppBar() {
           >
             {navItems.map((item) => (
               <Button
-                key={item}
+                key={item.name}
                 size="large"
+                href={item.link}
                 color="secondary"
                 sx={{ pt: 2.25, pb: 2.25 }}
               >
-                {item}
+                {item.name}
               </Button>
             ))}
             <Button
               variant="contained"
               color="primary"
               size="large"
+              href="/login"
               sx={{ ml: 2 }}
             >
               Bestiary Portal

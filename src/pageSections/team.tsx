@@ -10,9 +10,8 @@ export default function Team() {
         Meet our team!
       </Typography>
       <Typography sx={{ mb: 2 }}>
-        Our team met that one time where we were all in the same room. Non
-        dictum leo pellentesque. Aliquam dignissim est eget metus tempor, vel
-        ornare libero pellentesque.
+        We’re a passionate team of co-founders dedicated to simplifying pet
+        management for property managers
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box
@@ -38,13 +37,13 @@ export default function Team() {
             <TeamMember
               name="Kayla Hanaike"
               img="../../kayla.png"
-              title="Da Boss"
+              title="Business Lead"
               linkedIn="kayla-amerson-2315772b8"
             ></TeamMember>
             <TeamMember
               name="Caleb Barton"
               img="../../caleb.png"
-              title="Some Title"
+              title="Software Engineer"
               linkedIn="calebbarton0"
             ></TeamMember>
           </Box>
@@ -61,13 +60,13 @@ export default function Team() {
             <TeamMember
               name="Thomas Royer"
               img="../../thomas.png"
-              title="Some Title"
+              title="Software Engineer"
               linkedIn="thomas-royer-a79b31204"
             ></TeamMember>
             <TeamMember
               name="Alaina Denney"
               img="../../alaina.png"
-              title="Coder Extrodinaire"
+              title="Software Engineer"
               linkedIn="alaina-denney-765aa120b"
             ></TeamMember>
           </Box>

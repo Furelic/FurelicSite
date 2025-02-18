@@ -9,72 +9,45 @@ import {
   Button,
   Container,
 } from "@mui/material";
-import {
-  Person as PersonIcon,
-  Notifications as NotificationsIcon,
-  CheckCircle as CheckCircleIcon,
-  SupervisorAccount as SupervisorAccountIcon,
-  Pets as PetsIcon,
-} from "@mui/icons-material";
 import StickyNote2RoundedIcon from "@mui/icons-material/StickyNote2Rounded";
 import FindInPageRoundedIcon from "@mui/icons-material/FindInPageRounded";
 import PeopleRoundedIcon from "@mui/icons-material/PeopleRounded";
 import FactCheckRoundedIcon from "@mui/icons-material/FactCheckRounded";
 import SettingsSuggestRoundedIcon from "@mui/icons-material/SettingsSuggestRounded";
-import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
-import ArrowLeftRoundedIcon from "@mui/icons-material/ArrowLeftRounded";
-
-// Add CSS for the animation
-const styles = `
-  .fade-in-out {
-    transition: opacity 0.5s ease-in-out;
-  }
-  .fade-in-out.enter {
-    opacity: 0;
-  }
-  .fade-in-out.enter-active {
-    opacity: 1;
-  }
-  .fade-in-out.exit {
-    opacity: 1;
-  }
-  .fade-in-out.exit-active {
-    opacity: 0;
-  }
-`;
 
 const steps = [
   {
     label: "Onboarding",
     description:
-      "We at Furelic will work with you to transfer records from your files (physical or digital) to our own. We then create an account for each of your residents.",
+      "We start by working closely with your team to transfer all existing pet records—whether physical or digital—into Furelic’s secure system. Our experts digitize and organize your data, ensuring a smooth transition. Once completed, we create individual accounts for each of your residents, making it easy for them to submit and update their pet information.",
     icon: <PeopleRoundedIcon />,
     imageUrl: "../../green.png",
   },
   {
     label: "Tenant Info Submission",
-    description: "Tenants get notified to fill out their info.",
+    description:
+      "Tenants are notified to fill out their pet information through a simple, user-friendly interface. They can upload vaccination records, pet licenses, and other required documents directly to their account. This eliminates the need for paper forms and manual follow-ups.",
     icon: <StickyNote2RoundedIcon />,
     imageUrl: "../../orange.png",
   },
   {
     label: "Furelic Checking",
     description:
-      "We look over submissions to ensure they meet your requirements.",
+      "Our platform automatically reviews each submission to ensure it meets your property’s specific requirements. We verify vaccination records, licenses, and other documentation through third-party services, flagging any discrepancies or missing information for your team to review.",
     icon: <FindInPageRoundedIcon />,
     imageUrl: "../../purple.png",
   },
   {
     label: "Manager Checking",
     description:
-      "Property managers from your team can look over all applications to make sure nothing's out of place.",
+      "Your property management team can easily review all tenant submissions through Furelic’s dashboard. We provide a clear overview of each application, making it simple to spot and address any issues. This ensures compliance and reduces the risk of errors.",
     icon: <FactCheckRoundedIcon />,
     imageUrl: "../../orange.png",
   },
   {
     label: "Maintenance",
     description:
-      "We track vaccination records to notify you if anything goes out of date. Tenants can change their records and resubmit applications as pet situations change. Property managers can add notes about tenant pet situations.",
+      "Furelic doesn’t stop at onboarding. We continuously track vaccination records and other time-sensitive documents, sending automatic reminders to tenants and property managers when updates are needed. Tenants can easily update their records, and property managers can add notes or flag specific pet situations for future reference.",
     icon: <SettingsSuggestRoundedIcon />,
     imageUrl: "../../green.png",
   },
