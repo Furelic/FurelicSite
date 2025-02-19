@@ -8,6 +8,7 @@ import {
   Snackbar,
   Alert,
 } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
 
 interface FormData {
   name: string;
@@ -94,7 +95,7 @@ export default function ContactUs() {
   };
 
   return (
-    <Container id="contact" sx={{ scrollMarginTop: "64px" }}>
+    <Container id="contact" sx={{ scrollMarginTop: "64px", py: 8 }}>
       <Typography variant="h4" sx={{ mb: 3, fontWeight: "bold" }}>
         Contact Us
       </Typography>
@@ -152,28 +153,28 @@ export default function ContactUs() {
             helperText={errors.message}
             required
           />
-
-          <Button
-            type="submit"
-            variant="contained"
-            color="primary"
-            size="large"
-            disabled={isSubmitting}
-            sx={{ mt: 3 }}
-          >
-            {isSubmitting ? "Sending..." : "Send Message"}
-          </Button>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              size="large"
+              disabled={isSubmitting}
+              sx={{ mt: 3 }}
+            >
+              <SendIcon sx={{ mr: 1 }} />
+              {isSubmitting ? "Sending..." : "Send Message"}
+            </Button>
+          </Box>
         </Box>
 
         <Snackbar
           open={showSuccess}
           autoHideDuration={6000}
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+          message="Message sent successfully!"
           onClose={() => setShowSuccess(false)}
-        >
-          <Alert severity="success" onClose={() => setShowSuccess(false)}>
-            Message sent successfully!
-          </Alert>
-        </Snackbar>
+        ></Snackbar>
       </Container>
     </Container>
   );

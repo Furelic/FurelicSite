@@ -21,9 +21,6 @@ function PricingCard({ title, price, description }: PricingCardInfo) {
         >
           {title}
         </Typography>
-        <Typography variant="h3" component="p" color="secondary" sx={{ mb: 1 }}>
-          {price}
-        </Typography>
         <Typography
           variant="body1"
           color="textSecondary"
@@ -39,18 +36,20 @@ function PricingCard({ title, price, description }: PricingCardInfo) {
 
 export default function Pricing() {
   return (
-    <Container id="pricing" sx={{ scrollMarginTop: "64px" }}>
+    <Container id="pricing" sx={{ scrollMarginTop: "64px", py: 8 }}>
       <Typography variant="h4" sx={{ mb: 3, fontWeight: "bold" }}>
         Pricing
       </Typography>
-      <span>Simple, transparent pricing tailored to your needs.</span>
+      <span>
+        Get a customized quote based on your property’s size and needs.
+      </span>
       <Grid container spacing={4} justifyContent="center" sx={{ mt: 3 }}>
         {/* Onboarding Pricing Card */}
         <Grid item xs={12} sm={6} md={4}>
           <PricingCard
             title="One-Time Onboarding"
             price="$20/unit"
-            description="We’ll digitize your physical records (or transfer digital records) and set up your Furelic account."
+            description="We digitize pet records and set up your account for a seamless transition."
           />
         </Grid>
 
@@ -59,8 +58,7 @@ export default function Pricing() {
           <PricingCard
             title="Monthly Maintenance"
             price="$5/unit"
-            description="Ongoing access to Furelic’s platform, including automated
-                tracking, tenant notifications, and manager tools."
+            description="Ongoing access to automated tracking, tenant notifications, and management tools."
           />
         </Grid>
       </Grid>
