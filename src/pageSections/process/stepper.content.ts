@@ -37,7 +37,7 @@ export const steps: Step[] = [
       },
     ],
     icon: PeopleRoundedIcon,
-    imageUrl: "../../step_files.jpg",
+    imageUrl: "../../step/step_files.jpg",
   },
   {
     label: "Tenant Submissions",
@@ -59,7 +59,7 @@ export const steps: Step[] = [
       },
     ],
     icon: StickyNote2RoundedIcon,
-    imageUrl: "../../step_owner.jpg",
+    imageUrl: "../../step/step_owner.jpg",
   },
   {
     label: "Furelic-Approved Screening",
@@ -81,7 +81,7 @@ export const steps: Step[] = [
       },
     ],
     icon: FindInPageRoundedIcon,
-    imageUrl: "../../step_work.jpg",
+    imageUrl: "../../step/step_work.jpg",
   },
   {
     label: "Manager Review",
@@ -103,7 +103,7 @@ export const steps: Step[] = [
       },
     ],
     icon: FactCheckRoundedIcon,
-    imageUrl: "../../step_manager.jpg",
+    imageUrl: "../../step/step_manager.jpg",
   },
   {
     label: "Ongoing Pet Oversight",
@@ -125,6 +125,6 @@ export const steps: Step[] = [
       },
     ],
     icon: SettingsSuggestRoundedIcon,
-    imageUrl: "../../step_house.jpg",
+    imageUrl: "../../step/step_house.jpg",
   },
 ];
