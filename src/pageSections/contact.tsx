@@ -1,6 +1,6 @@
 export default function ContactUs() {
   return (
-    <form name="contact" netlify>
+    <form name="contact" data-netlify="true">
       <p>
         <label>
           Name <input type="text" name="name" />
