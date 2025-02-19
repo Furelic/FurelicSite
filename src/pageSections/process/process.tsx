@@ -56,10 +56,13 @@ export default function VerticalStepper() {
               <Card
                 sx={{
                   width: "100%",
+                  overflow: "hidden",
+                  backgroundColor: "grey.200",
                   backgroundImage: `url(${steps[activeStep].imageUrl})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-                  overflow: "hidden",
+
+                  transition: "background-image 1s ease-in-out",
                 }}
               ></Card>
             </Box>
