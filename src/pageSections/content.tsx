@@ -1,4 +1,4 @@
-import { Box, Divider } from "@mui/material";
+import { Box } from "@mui/material";
 import Intro from "./intro";
 import Team from "./team";
 import Pricing from "./pricing";

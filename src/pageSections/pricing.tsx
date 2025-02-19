@@ -6,7 +6,7 @@ interface PricingCardInfo {
   description: string;
 }
 
-function PricingCard({ title, price, description }: PricingCardInfo) {
+function PricingCard({ title, description }: PricingCardInfo) {
   return (
     <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       <CardContent sx={{ flexGrow: 1 }}>

@@ -9,14 +9,13 @@ import {
   Button,
   Container,
   Card,
-  CardMedia,
 } from "@mui/material";
 
 import { steps } from "./stepper.content";
 
 export default function VerticalStepper() {
   const [activeStep, setActiveStep] = useState(0);
-  const [isImageVisible, setIsImageVisible] = useState(true);
+  const [, setIsImageVisible] = useState(true);
 
   // Function to handle step change
   const handleStep = (step: number) => {

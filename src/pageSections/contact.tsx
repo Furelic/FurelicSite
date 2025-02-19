@@ -6,7 +6,6 @@ import {
   Typography,
   Container,
   Snackbar,
-  Alert,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 
