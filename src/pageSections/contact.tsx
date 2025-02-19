@@ -98,6 +98,11 @@ const ContactUs: React.FC = () => {
       <Typography variant="h4" sx={{ mb: 3, fontWeight: "bold" }}>
         Contact Us
       </Typography>
+      <span>
+        Have questions or want to learn more? We’d love to hear from you! Reach
+        out to us at furelic@gmail.com for inquiries, demos, or just to chat
+        about how Furelic can simplify pet management for your properties.
+      </span>
       <Container maxWidth="md">
         {/* Hidden form for Netlify */}
         <form name="contact" data-netlify="true" hidden>

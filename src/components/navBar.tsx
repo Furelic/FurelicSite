@@ -34,7 +34,7 @@ export default function DrawerAppBar() {
   const drawer = (
     <Box
       onClick={handleDrawerToggle}
-      sx={{ textAlign: "center", color: "primary.main" }}
+      sx={{ textAlign: "center", color: "secondary.main" }}
     >
       <List>
         {navItems.map((item) => (
