@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Stepper,
@@ -13,7 +13,24 @@ import {
 
 import { steps } from "./stepper.content";
 
+const preloadImages = (imageUrls: string[]) => {
+  imageUrls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+};
+
 export default function VerticalStepper() {
+  useEffect(() => {
+    preloadImages([
+      "/public/step_files.jpg",
+      "/public/step_owner.jpg",
+      "/public/step_work.jpg",
+      "/public/step_manager.jpg",
+      "/public/step_house.jpg",
+    ]);
+  }, []);
+
   const [activeStep, setActiveStep] = useState(0);
   const [, setIsImageVisible] = useState(true);
 
@@ -57,8 +74,8 @@ export default function VerticalStepper() {
                 sx={{
                   width: "100%",
                   overflow: "hidden",
-                  backgroundColor: "grey.200",
                   backgroundImage: `url(${steps[activeStep].imageUrl})`,
+                  backgroundColor: "grey.200",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
