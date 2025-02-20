@@ -61,8 +61,6 @@ export default function VerticalStepper() {
                   backgroundImage: `url(${steps[activeStep].imageUrl})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
-
-                  transition: "background-image 1s ease-in-out",
                 }}
               ></Card>
             </Box>
