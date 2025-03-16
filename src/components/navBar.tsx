@@ -50,7 +50,7 @@ export default function DrawerAppBar() {
         color="primary"
         size="large"
         sx={{ mb: 2 }}
-        href="/login"
+        href="https://bestiary.furelic.com/"
       >
         Bestiary Portal
       </Button>
@@ -113,7 +113,7 @@ export default function DrawerAppBar() {
               variant="contained"
               color="primary"
               size="large"
-              href="/login"
+              href="https://bestiary.furelic.com/"
               sx={{ ml: 2 }}
             >
               Bestiary Portal
